@@ -1,0 +1,11 @@
+# .github/workflows/call-hello-world.yml
+name: Call Reusable Hello World Workflow
+
+on: [push]
+
+jobs:
+  call_hello_world:
+    uses: alexjpaz-playground/test-actions/hello-world.yml@main
+    with:
+      name: "GitHub Actions"
+
